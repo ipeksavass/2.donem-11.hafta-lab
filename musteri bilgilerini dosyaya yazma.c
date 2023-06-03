@@ -7,7 +7,7 @@ int main(void){
 	double bakiye;
 	FILE *mfPtr; // musteri.dat dosyasi isaretcisi
 	if((mfPtr = fopen("musteri.dat","w")) == NULL)
-		printf("dosya acilamadý\n");
+		printf("dosya acilamadÄ±\n");
 	else{
 		printf("hesap no,isim ve bakiye girin\n");
 		printf("veri girisini bitirmek icin EOF girin\n");
