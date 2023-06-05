@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>                                   //calismiyor ve nedenini bulamadim
 
 int main(void){
 	int secim,hesapNo;
