@@ -8,16 +8,8 @@
  	else
  	{
  		printf("isminizi giriniz:\n");
- 		printf("veri girisini sonlandirmak icin EOF gir\n"); //EOF = ctrl+z
- 		printf("?\n");
- 		scanf("%s",ismim);
- 		
- 		while(!feof(stdin))
- 		{
- 			fprintf(mfPtr,"%s\n",ismim);
- 			printf("?\n");
- 			scanf("%s",ismim);
-		}
+ 		gets(ismim);
+		fprintf(mfPtr,"%s",ismim);
 		fclose(mfPtr);
 	}
 	return 0;
