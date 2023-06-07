@@ -2,7 +2,7 @@
 int main(){
         char ismim[20];
         FILE *mfPtr;
-        if((myPtr = fopen("ismim.dat","w")) == NULL){
+        if((myPtr = fopen("ismim.txt","w")) == NULL){
                 printf("dosya acilamadi\n");
                 return 0;
         }
@@ -15,7 +15,7 @@ int main(){
           printf("yeni isminizi giriniz:");
           gets(ismim);
  
-           if((mfPtr = fopen("ismim.dat","r+")) == NULL){
+           if((mfPtr = fopen("ismim.txt","r+")) == NULL){
                 printf("dosya acilamadi\n");
                 return 0;
           }
