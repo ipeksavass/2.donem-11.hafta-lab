@@ -3,7 +3,7 @@
  int main(void){
  	char ismim[20];
  	FILE *mfPtr;
- 	if((mfPtr = fopen("ismim.dat","w")) == NULL)
+ 	if((mfPtr = fopen("ismim.txt","w")) == NULL)
  		printf("dosya acilamadi");
  	else
  	{
