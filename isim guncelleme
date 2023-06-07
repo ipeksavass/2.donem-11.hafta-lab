@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(){
+        char ismim[20];
+        FILE *mfPtr;
+        if((myPtr = fopen("ismim.dat","w")) == NULL){
+                printf("dosya acilamadi\n");
+                return 0;
+        }
+         else{
+                printf("isim giriniz:");
+                gets(ismim);
+                fprintf(mfPtr,"%s",ismim);
+                fclose(mfPtr);
+          }
+          printf("yeni isminizi giriniz:");
+          gets(ismim);
+ 
+           if((mfPtr = fopen("ismim.dat","r+")) == NULL){
+                printf("dosya acilamadi\n");
+                return 0;
+          }
+          
+          else{
+                fprintf(mfPtr,"%s",ismim);
+                fclose(mfPtr);
+          }
+              
+          return 0;
+}
+         
